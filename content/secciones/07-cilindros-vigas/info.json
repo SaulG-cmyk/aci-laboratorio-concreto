@@ -1,0 +1,30 @@
+{
+  "id": "07-cilindros-vigas",
+  "numero": 7,
+  "titulo": "Fabricación y curado de cilindros y vigas en el campo",
+  "resumen": "Moldear, identificar, curar, proteger y transportar especímenes de concreto para ensayos de resistencia, conforme a la práctica ASTM C31/C31M.",
+  "norma_principal": "ASTM C31/C31M / NMX-C-160",
+  "especificaciones": [
+    { "label": "Cilindros", "valor": "150 × 300 mm o 100 × 200 mm; longitud = 2 × diámetro; diámetro ≥3 × NMAS del agregado grueso." },
+    { "label": "Vigas", "valor": "Sección estándar 150 × 150 mm; longitud ≥3 × peralte + 50 mm; relación ancho/peralte ≤1.5." },
+    { "label": "Compactación", "valor": "Slump ≥25 mm: varillado o vibración. Slump <25 mm: vibración obligatoria. Varilla de 10 mm para moldes <150 mm y de 16 mm para ≥150 mm." },
+    { "label": "Curado inicial", "valor": "16 a 27 °C y sin pérdida de humedad, hasta 48 h. Para concreto ≥40 MPa: 20 a 26 °C." },
+    { "label": "Curado final", "valor": "Agua saturada con hidróxido de calcio a 23 ± 2 °C; vigas al menos 20 h antes del ensayo." },
+    { "label": "Transporte", "valor": "No mover antes de 8 h después del moldeo; tiempo de transporte ≤4 h, con protección contra golpes, secado y congelación." },
+    { "label": "Registro", "valor": "Reportar identificación, ubicación, fecha y hora, slump, aire, temperatura, método de curado y desviaciones." }
+  ],
+  "checklist": [
+    "Seleccionar moldes limpios, estancos y con las dimensiones correctas.",
+    "Verificar que el diámetro o ancho sea compatible con el NMAS.",
+    "Aplicar desmoldante no reactivo en la superficie interior.",
+    "Medir y registrar slump, contenido de aire y temperatura antes de moldear.",
+    "Colocar concreto con cuchara alrededor del perímetro, en capas de igual volumen.",
+    "Compactar por varillado o vibración según el slump y la tabla de capas.",
+    "Golpear 10–15 veces las paredes del molde después de cada capa.",
+    "Enrasar, identificar y proteger contra la pérdida de humedad.",
+    "Curar inicialmente a 16–27 °C (20–26 °C si ≥40 MPa) por un máximo de 48 h.",
+    "Desmoldar y pasar a curado final a 23 ± 2 °C con agua saturada de cal.",
+    "Transportar después de 8 h, en un viaje ≤4 h y con protección adecuada.",
+    "Entregar al laboratorio con la ficha completa y sin desviaciones sin registrar."
+  ]
+}

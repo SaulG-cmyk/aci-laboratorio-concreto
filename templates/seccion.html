@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block title %}Sección {{ info.numero }} · {{ info.titulo }}{% endblock %}
+{% block content %}
+<div class="seccion-head">
+  <p class="kicker">Sección {{ info.numero }} de {{ total }}</p>
+  <h1>{{ info.titulo }}</h1>
+  <p class="lead">{{ info.resumen }}</p>
+  <p class="norma">Norma de referencia: <strong>{{ info.norma_principal }}</strong></p>
+</div>
+
+<section class="specs card pad">
+  <h2>Especificaciones</h2>
+  <div class="spec-grid">
+    {% for e in info.especificaciones %}
+      <div>
+        <h3>{{ e.label }}</h3>
+        <p>{{ e.valor }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<div class="toolbar">
+  <nav class="tabs" aria-label="Vistas de la sección">
+    {% for v in vistas %}
+      <a href="{{ url_for('seccion', seccion_id=info.id, vista=v.id) }}" class="{% if v.id == vista %}activo{% endif %}">{{ v.titulo }}</a>
+    {% endfor %}
+  </nav>
+  <button type="button" class="btn-mini no-print" data-imprimir>Imprimir / PDF</button>
+</div>
+
+<article class="prosa card pad">
+  {{ html | safe }}
+</article>
+
+<section class="card pad checklist-box">
+  <div class="checklist-head">
+    <div>
+      <h2>Checklist de la práctica</h2>
+      <p class="muted">Marca cada paso. El avance se guarda en este navegador.</p>
+    </div>
+    <span class="checklist-contador" data-contador="{{ info.id }}">0 de {{ info.checklist | length }}</span>
+  </div>
+  <ul class="checklist" data-seccion="{{ info.id }}">
+    {% for item in info.checklist %}
+      <li>
+        <label>
+          <input type="checkbox" data-idx="{{ loop.index0 }}">
+          <span>{{ item }}</span>
+        </label>
+      </li>
+    {% endfor %}
+  </ul>
+  <button type="button" class="btn-mini no-print" data-reiniciar-seccion="{{ info.id }}">Reiniciar esta práctica</button>
+</section>
+
+{% if es_ultima %}
+  <div id="felicitacion" class="felicitacion card pad" hidden>
+    <h2>¡Completaste las siete prácticas!</h2>
+    <p>Marcaste todos los pasos de las siete secciones. Es buen momento para resolver la autoevaluación y confirmar que dominas los criterios de cada norma.</p>
+    <p><a class="btn" href="{{ url_for('pagina', page_id='autoevaluacion') }}">Ir a la autoevaluación</a></p>
+  </div>
+{% endif %}
+
+<section class="card pad recursos-relacionados no-print">
+  <h2>Herramientas relacionadas</h2>
+  <div class="recursos-mini">
+    <a href="{{ url_for('pagina', page_id='formatos') }}">Formatos imprimibles</a>
+    <a href="{{ url_for('pagina', page_id='autoevaluacion') }}">Autoevaluación</a>
+    {% if info.id == '02-temperatura' %}
+      <a href="{{ url_for('pagina', page_id='calculadoras') }}#calc-temperatura">Calculadora de temperatura</a>
+    {% elif info.id == '04-densidad' %}
+      <a href="{{ url_for('pagina', page_id='calculadoras') }}#calc-densidad">Calculadora de densidad</a>
+      <a href="{{ url_for('pagina', page_id='calculadoras') }}#calc-rendimiento">Calculadora de rendimiento</a>
+    {% elif info.id == '05-aire-presion' %}
+      <a href="{{ url_for('pagina', page_id='calculadoras') }}#calc-aire-presion">Calculadora de aire por presión</a>
+    {% elif info.id == '06-aire-volumetrico' %}
+      <a href="{{ url_for('pagina', page_id='calculadoras') }}#calc-aire-volumetrico">Calculadora de aire volumétrico</a>
+    {% elif info.id == '07-cilindros-vigas' %}
+      <a href="{{ url_for('pagina', page_id='calculadoras') }}#calc-resistencia">Calculadora de resistencia</a>
+    {% endif %}
+    <a href="{{ url_for('pagina', page_id='seguridad') }}">Seguridad</a>
+    <a href="{{ url_for('pagina', page_id='equipo') }}">Equipo y calibración</a>
+  </div>
+</section>
+
+<nav class="pager" aria-label="Navegación entre secciones">
+  {% if anterior %}
+    <a class="btn ghost" href="{{ url_for('seccion', seccion_id=anterior.id) }}">Módulo anterior: Sección {{ anterior.numero }}</a>
+  {% else %}
+    <a class="btn ghost" href="{{ url_for('inicio') }}">Volver al inicio</a>
+  {% endif %}
+  {% if siguiente %}
+    <a class="btn" href="{{ url_for('seccion', seccion_id=siguiente.id) }}">Siguiente módulo: Sección {{ siguiente.numero }}</a>
+  {% else %}
+    <span class="btn ghost">Último módulo</span>
+  {% endif %}
+</nav>
+{% endblock %}

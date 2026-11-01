@@ -1,0 +1,24 @@
+{
+  "id": "04-densidad",
+  "numero": 4,
+  "titulo": "Densidad (peso unitario) y rendimiento",
+  "resumen": "Determinar la densidad del concreto fresco, el rendimiento de la amasada y el contenido de aire gravimétrico con un recipiente calibrado.",
+  "norma_principal": "ASTM C138 / NMX-C-162",
+  "especificaciones": [
+    { "label": "Recipiente", "valor": "Capacidad mínima según NMAS: 6 L (25 mm), 11 L (37.5 mm), 14 L (50 mm), 28 L (75 mm), 70 L (112 mm), 100 L (150 mm)." },
+    { "label": "Compactación", "valor": "Slump >75 mm: varillado. Slump 25–75 mm: varillado o vibración. Slump <25 mm: vibración." },
+    { "label": "Capas y golpes", "valor": "Varillado: 3 capas y 25 golpes (moldes ≤14 L), 50 golpes (28 L) o 1 golpe por 20 cm² (mayores)." },
+    { "label": "Balanza", "valor": "Precisión de 45 g o 0.3 % de la carga, la que sea mayor." },
+    { "label": "Registro", "valor": "Densidad a 1 kg/m³; rendimiento a 0.1 m³; rendimiento relativo a 0.01; aire a 0.1 %." }
+  ],
+  "checklist": [
+    "Verificar la capacidad y el volumen calibrado del recipiente.",
+    "Humedecer el interior y eliminar el agua estancada.",
+    "Determinar la masa del recipiente vacío.",
+    "Seleccionar varillado o vibración según el asentamiento.",
+    "Llenar en 3 capas y compactar con el número de golpes que corresponda.",
+    "Golpear los costados 10 a 15 veces con el mazo después de cada capa.",
+    "Enrasar, limpiar el exterior y pesar el recipiente lleno.",
+    "Calcular densidad, rendimiento, rendimiento relativo y aire gravimétrico."
+  ]
+}

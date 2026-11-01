@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" role="img" aria-labelledby="titulo">
+  <title id="titulo">Profundidad del sensor de temperatura según ASTM C1064</title>
+  <defs>
+    <marker id="f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f766e"/>
+    </marker>
+    <style>
+      .t { font-family: Arial, Helvetica, sans-serif; fill: #14304f; }
+      .s { font-family: Arial, Helvetica, sans-serif; fill: #64748b; }
+      .n { font-family: Arial, Helvetica, sans-serif; fill: #0f766e; font-weight: bold; }
+    </style>
+  </defs>
+
+  <rect width="800" height="440" fill="#ffffff"/>
+  <text class="t" x="32" y="38" font-size="21" font-weight="bold">Temperatura del concreto fresco — ASTM C1064</text>
+  <text class="s" x="32" y="62" font-size="13">Sensor con al menos 75 mm de concreto en todas las direcciones y lectura entre 2 y 5 minutos</text>
+
+  <!-- Recipiente -->
+  <rect x="28" y="86" width="382" height="320" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text class="t" x="48" y="112" font-size="14" font-weight="bold">Corte del recipiente</text>
+
+  <path d="M 82 148 L 348 148 L 330 372 L 100 372 Z" fill="#e2e8f0" stroke="#334155" stroke-width="3"/>
+  <path d="M 96 186 L 334 186 L 320 360 L 110 360 Z" fill="#d6d3d1" stroke="#a8a29e" stroke-width="1.5"/>
+  <text class="s" x="176" y="344" font-size="12">concreto</text>
+
+  <!-- superficie -->
+  <line x1="96" y1="186" x2="334" y2="186" stroke="#78716c" stroke-width="2"/>
+  <text class="s" x="300" y="180" font-size="11">superficie</text>
+
+  <!-- termómetro -->
+  <rect x="208" y="108" width="22" height="150" rx="9" fill="#f1f5f9" stroke="#14304f" stroke-width="2.5"/>
+  <rect x="214" y="120" width="10" height="120" fill="#ef4444"/>
+  <circle cx="219" cy="272" r="14" fill="#ef4444" stroke="#14304f" stroke-width="2.5"/>
+  <rect x="204" y="98" width="30" height="16" rx="4" fill="#14304f"/>
+  <text class="s" x="246" y="112" font-size="11">termómetro</text>
+
+  <!-- cota 75 mm -->
+  <line x1="272" y1="186" x2="272" y2="272" stroke="#0f766e" stroke-width="2.5" marker-start="url(#f)" marker-end="url(#f)"/>
+  <text class="n" x="282" y="234" font-size="13">≥ 75 mm</text>
+
+  <!-- cobertura 3x NMAS -->
+  <line x1="150" y1="300" x2="288" y2="300" stroke="#d97706" stroke-width="2.5" marker-start="url(#f)" marker-end="url(#f)"/>
+  <text class="s" x="158" y="322" font-size="11">cobertura ≥ 3 × NMAS</text>
+
+  <!-- Panel derecho: verificación -->
+  <rect x="430" y="86" width="342" height="320" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text class="t" x="450" y="112" font-size="14" font-weight="bold">Verificación del instrumento</text>
+
+  <circle cx="458" cy="142" r="4" fill="#0f766e"/>
+  <text class="s" x="472" y="147" font-size="12">Al menos una vez al año</text>
+  <circle cx="458" cy="172" r="4" fill="#0f766e"/>
+  <text class="s" x="472" y="177" font-size="12">Dos puntos separados ≥ 15 °C</text>
+  <circle cx="458" cy="202" r="4" fill="#0f766e"/>
+  <text class="s" x="472" y="207" font-size="12">Baño estable dentro de 0.2 °C</text>
+  <circle cx="458" cy="232" r="4" fill="#0f766e"/>
+  <text class="s" x="472" y="237" font-size="12">Esperar al menos 5 min</text>
+  <circle cx="458" cy="262" r="4" fill="#0f766e"/>
+  <text class="s" x="472" y="267" font-size="12">Patrón con exactitud ± 0.2 °C</text>
+
+  <rect x="450" y="292" width="302" height="86" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <text class="t" x="466" y="316" font-size="13" font-weight="bold">Criterio de rechazo</text>
+  <text class="s" x="466" y="338" font-size="12">Si la diferencia con el patrón excede</text>
+  <text class="s" x="466" y="356" font-size="12">0.5 °C, el instrumento se rechaza</text>
+  <text class="s" x="466" y="372" font-size="12">o se ajusta y se vuelve a verificar.</text>
+</svg>

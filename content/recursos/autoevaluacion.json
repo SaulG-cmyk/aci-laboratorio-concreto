@@ -1,0 +1,169 @@
+{
+  "titulo": "Autoevaluación del técnico ACI Grado I",
+  "descripcion": "Resuelve 21 preguntas de las siete prácticas. Al calificar verás la respuesta correcta, la explicación y tu puntaje. Puedes repetir la prueba cuantas veces quieras.",
+  "aprobado": 80,
+  "preguntas": [
+    {
+      "tema": "Muestreo",
+      "pregunta": "¿Cuál es el tiempo máximo entre la primera y la última porción de una muestra compuesta?",
+      "opciones": ["5 minutos", "10 minutos", "15 minutos", "30 minutos"],
+      "correcta": 2,
+      "explicacion": "La ASTM C172 limita a 15 minutos la composición de la muestra. Si se excede, la muestra deja de ser representativa y debe rechazarse."
+    },
+    {
+      "tema": "Muestreo",
+      "pregunta": "¿Qué volumen mínimo de muestra se requiere para moldear especímenes de resistencia?",
+      "opciones": ["6 litros", "14 litros", "28 litros", "70 litros"],
+      "correcta": 2,
+      "explicacion": "Se requieren al menos 28 L (1 pie³) para moldear especímenes de resistencia. El volumen también debe ajustarse al tamaño máximo nominal del agregado y al número de especímenes."
+    },
+    {
+      "tema": "Muestreo",
+      "pregunta": "La muestra compuesta se completó a las 09:12. ¿A más tardar a qué hora deben iniciarse el asentamiento, la temperatura y el aire?",
+      "opciones": ["09:17", "09:27", "09:42", "10:12"],
+      "correcta": 0,
+      "explicacion": "Los ensayos de asentamiento, temperatura y contenido de aire deben iniciarse dentro de los 5 minutos posteriores a la última porción. El moldeo de especímenes tiene un límite de 15 minutos."
+    },
+    {
+      "tema": "Temperatura",
+      "pregunta": "¿Cuál es la profundidad mínima de inmersión del sensor de temperatura?",
+      "opciones": ["25 mm", "50 mm", "75 mm", "100 mm"],
+      "correcta": 2,
+      "explicacion": "El sensor debe quedar sumergido al menos 75 mm y rodeado de concreto en todas las direcciones. El contenedor también debe dar cobertura suficiente."
+    },
+    {
+      "tema": "Temperatura",
+      "pregunta": "¿Qué exactitud mínima debe tener el dispositivo de medición de temperatura?",
+      "opciones": ["±0.1 °C", "±0.5 °C", "±1.0 °C", "±2.0 °C"],
+      "correcta": 1,
+      "explicacion": "La ASTM C1064 exige una exactitud de ±0.5 °C (±1 °F) y un rango de 0 a 50 °C. La verificación se realiza al menos una vez al año y después de un golpe o cambio de batería."
+    },
+    {
+      "tema": "Temperatura",
+      "pregunta": "¿Cuánto tiempo debe permanecer el dispositivo en el concreto antes de leer?",
+      "opciones": ["Inmediatamente", "30 segundos", "Entre 2 y 5 minutos", "15 minutos"],
+      "correcta": 2,
+      "explicacion": "Se deja el dispositivo entre 2 y 5 minutos, presionando suavemente el concreto alrededor del vástago para aislar la lectura del aire ambiente. Se lee sin retirarlo."
+    },
+    {
+      "tema": "Asentamiento",
+      "pregunta": "¿Cuántas capas y cuántos golpes por capa se usan en el cono de Abrams?",
+      "opciones": ["2 capas y 25 golpes", "3 capas y 25 golpes", "3 capas y 50 golpes", "4 capas y 25 golpes"],
+      "correcta": 1,
+      "explicacion": "Se llena en 3 capas de aproximadamente un tercio del volumen y se dan 25 golpes uniformes por capa con el extremo redondeado de la varilla."
+    },
+    {
+      "tema": "Asentamiento",
+      "pregunta": "¿Cómo se retira el cono al terminar el varillado?",
+      "opciones": ["100 mm en 2 segundos", "300 mm en 5 ± 2 segundos", "300 mm en 15 segundos", "200 mm en 10 segundos"],
+      "correcta": 1,
+      "explicacion": "El cono se levanta verticalmente 300 mm en 5 ± 2 segundos, sin movimiento lateral ni torsional. Un retiro inclinado o girado invalida el ensayo."
+    },
+    {
+      "tema": "Asentamiento",
+      "pregunta": "¿Cuál es la duración máxima del ensayo completo, desde el inicio del llenado hasta retirar el molde?",
+      "opciones": ["1 minuto", "2.5 minutos", "5 minutos", "10 minutos"],
+      "correcta": 1,
+      "explicacion": "La ASTM C143 exige completar el ensayo en 2.5 minutos. La medición del descenso se hace inmediatamente después de retirar el cono."
+    },
+    {
+      "tema": "Densidad",
+      "pregunta": "¿Cuál es la fórmula correcta de la densidad del concreto fresco?",
+      "opciones": [
+        "D = (Mc − Mm) / Vm",
+        "D = Mc / Vm",
+        "D = (Mc + Mm) / Vm",
+        "D = Vm / (Mc − Mm)"
+      ],
+      "correcta": 0,
+      "explicacion": "La densidad es la masa neta de concreto dividida entre el volumen del molde: D = (Mc − Mm) / Vm. Mc es el molde lleno, Mm el molde vacío y Vm el volumen calibrado."
+    },
+    {
+      "tema": "Densidad",
+      "pregunta": "¿Qué capacidad mínima de recipiente se requiere para un agregado con NMAS de 75 mm?",
+      "opciones": ["6 litros", "11 litros", "14 litros", "28 litros"],
+      "correcta": 3,
+      "explicacion": "Para un NMAS de 75 mm (3 in) se requiere un recipiente de al menos 28 L (1 pie³). El volumen real debe ser al menos el 95 % del volumen nominal."
+    },
+    {
+      "tema": "Densidad",
+      "pregunta": "En un molde de 28 L compactado por varillado, ¿cuántos golpes se dan por capa?",
+      "opciones": ["25 golpes", "50 golpes", "75 golpes", "100 golpes"],
+      "correcta": 1,
+      "explicacion": "La ASTM C138 pide 25 golpes por capa en moldes de hasta 14 L y 50 golpes por capa en moldes de 28 L. En moldes mayores se usa 1 golpe por cada 20 cm²."
+    },
+    {
+      "tema": "Aire por presión",
+      "pregunta": "¿Cómo se obtiene el contenido real de aire en el método de presión?",
+      "opciones": [
+        "As = A1 − G",
+        "As = A1 + G",
+        "As = G − A1",
+        "As = A1 × G"
+      ],
+      "correcta": 0,
+      "explicacion": "El contenido aparente A1 se corrige restando el factor por agregado G: As = A1 − G. El factor G compensa el aire atrapado en los poros del agregado."
+    },
+    {
+      "tema": "Aire por presión",
+      "pregunta": "¿Qué método debe usarse con concreto de agregado ligero o poroso?",
+      "opciones": ["ASTM C231 (presión)", "ASTM C173 (volumétrico)", "ASTM C138 (gravimétrico)", "ASTM C143 (asentamiento)"],
+      "correcta": 1,
+      "explicacion": "El método de presión no es aplicable a agregados ligeros, porosos o escorias enfriadas al aire porque no se puede determinar un factor G confiable. En esos casos se usa la ASTM C173."
+    },
+    {
+      "tema": "Aire por presión",
+      "pregunta": "¿Con qué frecuencia se repite la calibración final del medidor de aire por presión?",
+      "opciones": ["Cada semana", "Cada mes", "Al menos cada 3 meses", "Cada 5 años"],
+      "correcta": 2,
+      "explicacion": "La calibración final se repite al menos cada 3 meses. Además, el medidor Tipo A se recalibra si se cambia de elevación más de 180 m (600 ft)."
+    },
+    {
+      "tema": "Aire volumétrico",
+      "pregunta": "¿Cuál es la fórmula del contenido de aire por el método volumétrico?",
+      "opciones": [
+        "A = AR − C + W",
+        "A = AR + C − W",
+        "A = AR − W",
+        "A = C − AR + W"
+      ],
+      "correcta": 0,
+      "explicacion": "A = AR − C + W, donde AR es la lectura final, C la corrección por alcohol y W el número de copas calibradas de agua agregadas. El resultado se reporta al 0.25 % más cercano."
+    },
+    {
+      "tema": "Aire volumétrico",
+      "pregunta": "¿Cuándo es obligatorio aplicar la corrección C por alcohol isopropílico?",
+      "opciones": ["Siempre", "Cuando se usan más de 1.25 L (2.5 pt)", "Cuando se usan más de 5 L", "Nunca"],
+      "correcta": 1,
+      "explicacion": "Si se usa más de 1.25 L (2.5 pt) de alcohol al 70 %, la corrección es obligatoria. El volumen se redondea al 0.5 L (1 pt) más cercano y se toma el factor de la tabla vigente."
+    },
+    {
+      "tema": "Aire volumétrico",
+      "pregunta": "¿Con qué precisión se reporta el contenido de aire volumétrico?",
+      "opciones": ["0.1 %", "0.25 %", "0.5 %", "1.0 %"],
+      "correcta": 1,
+      "explicacion": "La ASTM C173 reporta al 0.25 % más cercano. La lectura se hace en la parte inferior del menisco y debe confirmarse repitiendo el rodado."
+    },
+    {
+      "tema": "Especímenes",
+      "pregunta": "¿Cuál es el rango de temperatura del curado inicial de los especímenes?",
+      "opciones": ["10 a 20 °C", "16 a 27 °C", "20 a 30 °C", "23 ± 2 °C"],
+      "correcta": 1,
+      "explicacion": "El curado inicial se mantiene entre 16 y 27 °C (60 y 80 °F) durante un máximo de 48 horas. Para concretos de 40 MPa o más, el rango se reduce a 20–26 °C."
+    },
+    {
+      "tema": "Especímenes",
+      "pregunta": "¿Cuánto tiempo debe esperarse como mínimo antes de transportar los especímenes?",
+      "opciones": ["2 horas", "4 horas", "8 horas", "24 horas"],
+      "correcta": 2,
+      "explicacion": "No se transportan antes de 8 horas después del moldeo. El tiempo de transporte no debe exceder 4 horas y los especímenes deben protegerse de golpes y pérdida de humedad."
+    },
+    {
+      "tema": "Especímenes",
+      "pregunta": "¿Qué relación debe existir entre la longitud y el diámetro de un cilindro de ensayo?",
+      "opciones": ["1:1", "1.5:1", "2:1", "3:1"],
+      "correcta": 2,
+      "explicacion": "El cilindro debe tener una longitud igual al doble de su diámetro y un diámetro de al menos 3 veces el NMAS del agregado grueso."
+    }
+  ]
+}

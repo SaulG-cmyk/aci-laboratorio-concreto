@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %}Inicio · {{ catalogo.titulo }}{% endblock %}
+{% block content %}
+<section class="hero">
+  <div>
+    <p class="kicker">{{ catalogo.subtitulo }}</p>
+    <h1>Certificación del ACI<br>en concreto fresco</h1>
+    <p class="lead">{{ catalogo.titulo }}. Conoce normativa, procedimientos y ensayos de las siete secciones del programa.</p>
+    <div class="hero-acciones">
+      <a class="btn hero-btn" href="{{ url_for('seccion', seccion_id='01-muestreo') }}">Comenzar por la Sección 1</a>
+      <a class="btn hero-btn ghost" href="{{ url_for('pagina', page_id='autoevaluacion') }}">Probar la autoevaluación</a>
+    </div>
+  </div>
+  <p class="hero-quote">{{ catalogo.lema }}</p>
+</section>
+
+<section id="continuar" class="continuar" hidden>
+  <a id="continuar-enlace" class="btn" href="#">Continuar donde lo dejaste</a>
+  <button type="button" class="btn-mini" id="borrar-continuar">Borrar</button>
+</section>
+
+<section>
+  <h2 class="bloque-titulo">Categorías de pruebas</h2>
+  <p class="muted">Selecciona un grupo y entra a cada sección.</p>
+  <div class="grid-2">
+    {% for g in nav_grupos %}
+      <article class="card grupo">
+        <h3>{{ g.titulo }}</h3>
+        <p>{{ g.descripcion }}</p>
+        <ul class="lista-secciones">
+          {% for s in g.secciones_nav %}
+            <li>
+              <a href="{{ url_for('seccion', seccion_id=s.id) }}">
+                <span>Sección {{ s.numero }}</span>
+                {{ s.titulo }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section>
+  <h2 class="bloque-titulo">Todas las secciones</h2>
+  <div class="grid-cards">
+    {% for s in nav_secciones %}
+      <a class="card prueba" href="{{ url_for('seccion', seccion_id=s.id) }}">
+        <div class="thumb t{{ s.numero }}"></div>
+        <div class="card-body">
+          <span class="badge">Sección {{ s.numero }}</span>
+          <h3>{{ s.titulo }}</h3>
+          <p>{{ s.resumen }}</p>
+          <small>{{ s.norma_principal }}</small>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="recursos-inicio">
+  <h2 class="bloque-titulo">Recursos de estudio</h2>
+  <p class="muted">Herramientas para repasar, calcular y llevar el manual a la obra.</p>
+  <div class="grid-recursos">
+    {% for p in nav_paginas if p.menu == 'recursos' %}
+      <a class="card recurso" href="{{ url_for('pagina', page_id=p.id) }}">
+        <span class="recurso-marca">Recurso</span>
+        <h3>{{ p.titulo }}</h3>
+        <p>{{ p.resumen }}</p>
+        <span class="recurso-enlace">Abrir →</span>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

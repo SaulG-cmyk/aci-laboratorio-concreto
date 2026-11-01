@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}{{ meta.titulo }} · {{ catalogo.titulo }}{% endblock %}
+{% block content %}
+{% if meta.menu == 'recursos' %}
+  <p class="kicker">Recursos de estudio</p>
+{% endif %}
+<div class="page-tools no-print">
+  <button type="button" class="btn-mini" data-imprimir>Imprimir / PDF</button>
+</div>
+<article class="prosa card pad">
+  {{ html | safe }}
+</article>
+{% endblock %}

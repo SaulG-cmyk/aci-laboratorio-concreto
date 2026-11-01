@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Página no encontrada · {{ catalogo.titulo }}{% endblock %}
+{% block content %}
+<article class="card pad error-404">
+  <p class="kicker">Error 404</p>
+  <h1>No encontramos esa página</h1>
+  <p class="lead">El enlace puede estar mal escrito o el contenido aún no existe. Puedes volver al inicio o buscar la práctica desde el menú.</p>
+  <div class="error-acciones">
+    <a class="btn" href="{{ url_for('inicio') }}">Volver al inicio</a>
+    <a class="btn ghost" href="{{ url_for('pagina', page_id='introduccion') }}">Leer la introducción</a>
+  </div>
+</article>
+{% endblock %}

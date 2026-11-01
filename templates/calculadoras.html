@@ -1,0 +1,186 @@
+﻿{% extends "base.html" %}
+{% block title %}Calculadoras · {{ catalogo.titulo }}{% endblock %}
+{% block content %}
+<header class="recurso-head">
+  <p class="kicker">Recursos de estudio</p>
+  <h1>Calculadoras de campo</h1>
+  <p class="lead">Resuelve los cálculos de las siete prácticas y verifica tus resultados antes de registrarlos. Los valores se calculan en tu navegador; no se envían a ningún servidor.</p>
+  <p class="muted">Usa punto o coma decimal. Redondea el resultado final según la norma y el formato del proyecto.</p>
+</header>
+
+<div class="calc-grid">
+
+  <section class="card pad calc-card" id="calc-densidad" data-calc="densidad">
+    <h2>Densidad del concreto fresco</h2>
+    <p class="calc-norma">ASTM C138</p>
+    <div class="campos">
+      <label>Masa del molde lleno, M<sub>c</sub> (kg)
+        <input type="text" inputmode="decimal" data-campo="mc" placeholder="41.78">
+      </label>
+      <label>Masa del molde vacío, M<sub>m</sub> (kg)
+        <input type="text" inputmode="decimal" data-campo="mm" placeholder="8.89">
+      </label>
+      <label>Volumen del molde, V<sub>m</sub> (L)
+        <input type="text" inputmode="decimal" data-campo="vm" placeholder="14.27">
+      </label>
+    </div>
+    <button type="button" class="btn" data-calcular>Calcular densidad</button>
+    <div class="calc-resultado" data-resultado hidden aria-live="polite"></div>
+    <p class="calc-formula">D = (M<sub>c</sub> − M<sub>m</sub>) / V<sub>m</sub></p>
+  </section>
+
+  <section class="card pad calc-card" id="calc-rendimiento" data-calc="rendimiento">
+    <h2>Rendimiento y aire gravimétrico</h2>
+    <p class="calc-norma">ASTM C138</p>
+    <div class="campos">
+      <label>Masa total de la amasada, M (kg)
+        <input type="text" inputmode="decimal" data-campo="masa" placeholder="12383">
+      </label>
+      <label>Densidad medida, D (kg/m³)
+        <input type="text" inputmode="decimal" data-campo="densidad" placeholder="2305">
+      </label>
+      <label>Volumen diseñado, Y<sub>d</sub> (m³)
+        <input type="text" inputmode="decimal" data-campo="yd" placeholder="5.4">
+      </label>
+      <label>Cemento total en la amasada, C<sub>b</sub> (kg) <span class="opcional">opcional</span>
+        <input type="text" inputmode="decimal" data-campo="cemento" placeholder="1900">
+      </label>
+      <label>Densidad teórica, T (kg/m³) <span class="opcional">opcional</span>
+        <input type="text" inputmode="decimal" data-campo="teorica" placeholder="2425">
+      </label>
+    </div>
+    <button type="button" class="btn" data-calcular>Calcular rendimiento</button>
+    <div class="calc-resultado" data-resultado hidden aria-live="polite"></div>
+    <p class="calc-formula">Y = M / D · R<sub>y</sub> = Y / Y<sub>d</sub> · A = [(T − D) / T] × 100</p>
+  </section>
+
+  <section class="card pad calc-card" id="calc-aire-presion" data-calc="aire-presion">
+    <h2>Contenido de aire por presión</h2>
+    <p class="calc-norma">ASTM C231</p>
+    <div class="campos">
+      <label>Contenido aparente, A<sub>1</sub> (%)
+        <input type="text" inputmode="decimal" data-campo="a1" placeholder="5.3">
+      </label>
+      <label>Factor de corrección por agregado, G (%)
+        <input type="text" inputmode="decimal" data-campo="g" placeholder="0.4">
+      </label>
+    </div>
+    <button type="button" class="btn" data-calcular>Calcular contenido de aire</button>
+    <div class="calc-resultado" data-resultado hidden aria-live="polite"></div>
+    <p class="calc-formula">A<sub>s</sub> = A<sub>1</sub> − G</p>
+    <details class="calc-extra">
+      <summary>Ajuste para mezcla completa tamizada por 37.5 mm</summary>
+      <div class="campos">
+        <label>Volumen absoluto de ingredientes que pasan 37.5 mm, V<sub>c</sub> (m³)
+          <input type="text" inputmode="decimal" data-campo="vc" placeholder="0.85">
+        </label>
+        <label>Volumen absoluto de todos los ingredientes, V<sub>t</sub> (m³)
+          <input type="text" inputmode="decimal" data-campo="vt" placeholder="1.00">
+        </label>
+        <label>Volumen absoluto del agregado mayor de 37.5 mm, V<sub>a</sub> (m³)
+          <input type="text" inputmode="decimal" data-campo="va" placeholder="0.15">
+        </label>
+      </div>
+      <p class="calc-formula">A<sub>t</sub> = 100 · A<sub>s</sub> · V<sub>c</sub> / (100 · V<sub>t</sub> − A<sub>s</sub> · V<sub>a</sub>)</p>
+    </details>
+  </section>
+
+  <section class="card pad calc-card" id="calc-aire-volumetrico" data-calc="aire-volumetrico">
+    <h2>Contenido de aire volumétrico</h2>
+    <p class="calc-norma">ASTM C173</p>
+    <div class="campos">
+      <label>Lectura final del medidor, A<sub>R</sub> (%)
+        <input type="text" inputmode="decimal" data-campo="ar" placeholder="5.25">
+      </label>
+      <label>Corrección por alcohol, C (%)
+        <input type="text" inputmode="decimal" data-campo="c" placeholder="0.25">
+      </label>
+      <label>Copas calibradas de agua agregadas, W
+        <input type="text" inputmode="numeric" data-campo="w" placeholder="0">
+      </label>
+    </div>
+    <button type="button" class="btn" data-calcular>Calcular contenido de aire</button>
+    <div class="calc-resultado" data-resultado hidden aria-live="polite"></div>
+    <p class="calc-formula">A = A<sub>R</sub> − C + W</p>
+    <p class="calc-nota">La corrección C es obligatoria cuando se usan más de 1.25 L (2.5 pt) de alcohol isopropílico al 70 %.</p>
+  </section>
+
+  <section class="card pad calc-card" id="calc-resistencia" data-calc="resistencia">
+    <h2>Esfuerzo de un cilindro</h2>
+    <p class="calc-norma">Cálculo de apoyo · ASTM C39</p>
+    <div class="campos">
+      <label>Carga máxima (kN)
+        <input type="text" inputmode="decimal" data-campo="carga" placeholder="500">
+      </label>
+      <label>Diámetro del cilindro (cm)
+        <input type="text" inputmode="decimal" data-campo="diametro" placeholder="15">
+      </label>
+      <label>Altura del cilindro (cm) <span class="opcional">opcional</span>
+        <input type="text" inputmode="decimal" data-campo="altura" placeholder="30">
+      </label>
+    </div>
+    <button type="button" class="btn" data-calcular>Calcular esfuerzo</button>
+    <div class="calc-resultado" data-resultado hidden aria-live="polite"></div>
+    <p class="calc-formula">f = P / A · A = π · d² / 4</p>
+    <p class="calc-nota">Es un cálculo geométrico de apoyo. No corrige por cabeceo, relación longitud/diámetro ni humedad del espécimen.</p>
+  </section>
+
+  <section class="card pad calc-card" id="calc-temperatura" data-calc="temperatura">
+    <h2>Temperatura corregida</h2>
+    <p class="calc-norma">ASTM C1064</p>
+    <div class="campos">
+      <label>Lectura del instrumento
+        <input type="number" inputmode="decimal" step="any" data-campo="temp" placeholder="24.5">
+      </label>
+      <label>Unidad de la lectura
+        <select data-campo="unidad">
+          <option value="C">°C</option>
+          <option value="F">°F</option>
+        </select>
+      </label>
+      <label>Corrección del certificado <span class="opcional">opcional</span>
+        <input type="number" inputmode="decimal" step="any" data-campo="correccion" placeholder="0.2">
+      </label>
+    </div>
+    <button type="button" class="btn" data-calcular>Convertir y corregir</button>
+    <div class="calc-resultado" data-resultado hidden aria-live="polite"></div>
+    <p class="calc-formula">°C = (°F − 32) / 1.8 · °F = °C × 1.8 + 32</p>
+    <p class="calc-nota">La corrección se interpreta en la misma unidad de la lectura. Reporta al 0.5 °C (1 °F) más cercano.</p>
+  </section>
+
+  <section class="card pad calc-card" id="calc-conversiones" data-calc="conversiones">
+    <h2>Conversión de unidades</h2>
+    <p class="calc-norma">Equivalencias de campo</p>
+    <div class="campos">
+      <label>Valor
+        <input type="number" inputmode="decimal" step="any" data-campo="valor" placeholder="1">
+      </label>
+      <label>Categoría
+        <select data-campo="categoria">
+          <option value="longitud">Longitud</option>
+          <option value="masa">Masa</option>
+          <option value="volumen">Volumen</option>
+          <option value="esfuerzo">Esfuerzo / presión</option>
+        </select>
+      </label>
+      <label>De
+        <select data-campo="de"></select>
+      </label>
+      <label>A
+        <select data-campo="a"></select>
+      </label>
+    </div>
+    <button type="button" class="btn" data-calcular>Convertir</button>
+    <div class="calc-resultado" data-resultado hidden aria-live="polite"></div>
+    <p class="calc-formula">Factores basados en el apéndice del manual.</p>
+  </section>
+
+</div>
+
+<div class="aviso">
+  <strong>Control de calidad:</strong> una calculadora no corrige una muestra mal tomada, un equipo descalibrado ni un procedimiento fuera de tiempo. Registra siempre los datos originales y la norma aplicada.
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/calculadoras.js') }}"></script>
+{% endblock %}

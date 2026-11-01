@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="900" height="640" role="img" aria-labelledby="titulo">
+  <title id="titulo">Especímenes de concreto en campo: cilindros 100 x 200 mm, 150 x 300 mm, viga 150 x 150 mm y secuencia de curado ASTM C31</title>
+  <defs>
+    <style>
+      .t { font-family: Arial, Helvetica, sans-serif; fill: #14304f; }
+      .s { font-family: Arial, Helvetica, sans-serif; fill: #475569; }
+      .n { font-family: Arial, Helvetica, sans-serif; fill: #0f766e; font-weight: bold; }
+      .w { font-family: Arial, Helvetica, sans-serif; fill: #ffffff; font-weight: bold; }
+      .lbl { font-family: Arial, Helvetica, sans-serif; fill: #1e293b; font-size: 11.5px; }
+      .dim { font-family: Arial, Helvetica, sans-serif; fill: #0f766e; font-size: 11px; }
+    </style>
+    <marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0f766e"/>
+    </marker>
+    <marker id="a2" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="640" fill="#ffffff"/>
+  <text class="t" x="30" y="38" font-size="22" font-weight="bold">Especímenes de campo — ASTM C31</text>
+  <text class="s" x="30" y="62" font-size="13">Dimensiones, capas de compactación y secuencia de curado de cilindros y vigas</text>
+
+  <!-- CILINDROS -->
+  <rect x="24" y="86" width="420" height="300" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text class="t" x="44" y="114" font-size="14" font-weight="bold">Cilindros</text>
+
+  <!-- cilindro 100x200 -->
+  <g>
+    <path d="M 80 180 L 80 360 A 45 10 0 0 0 170 360 L 170 180 Z" fill="#e2e8f0" stroke="#14304f" stroke-width="2.5"/>
+    <ellipse cx="125" cy="180" rx="45" ry="10" fill="#f1f5f9" stroke="#14304f" stroke-width="2.5"/>
+    <line x1="82" y1="240" x2="168" y2="240" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
+    <line x1="82" y1="300" x2="168" y2="300" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
+    <text class="lbl" x="94" y="216" font-size="10">2 capas</text>
+    <text class="lbl" x="94" y="276" font-size="10">25 golpes</text>
+    <!-- cota diámetro -->
+    <line x1="80" y1="382" x2="170" y2="382" stroke="#0f766e" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/>
+    <text class="dim" x="98" y="398">100 mm</text>
+    <!-- cota altura -->
+    <line x1="190" y1="180" x2="190" y2="370" stroke="#0f766e" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/>
+    <text class="dim" x="198" y="280">200 mm</text>
+    <text class="t" x="86" y="424" font-size="12" font-weight="bold">100 × 200 mm</text>
+  </g>
+
+  <!-- cilindro 150x300 -->
+  <g>
+    <path d="M 246 150 L 246 360 A 60 12 0 0 0 366 360 L 366 150 Z" fill="#e2e8f0" stroke="#14304f" stroke-width="2.5"/>
+    <ellipse cx="306" cy="150" rx="60" ry="12" fill="#f1f5f9" stroke="#14304f" stroke-width="2.5"/>
+    <line x1="248" y1="220" x2="364" y2="220" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
+    <line x1="248" y1="290" x2="364" y2="290" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
+    <text class="lbl" x="258" y="196" font-size="10">3 capas</text>
+    <text class="lbl" x="258" y="330" font-size="10">25 golpes/capa</text>
+    <!-- cota diámetro -->
+    <line x1="246" y1="382" x2="366" y2="382" stroke="#0f766e" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/>
+    <text class="dim" x="286" y="398">150 mm</text>
+    <!-- cota altura -->
+    <line x1="384" y1="150" x2="384" y2="370" stroke="#0f766e" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/>
+    <text class="dim" x="392" y="266">300 mm</text>
+    <text class="t" x="254" y="424" font-size="12" font-weight="bold">150 × 300 mm</text>
+  </g>
+
+  <text class="s" x="44" y="452" font-size="11">Longitud = 2 × diámetro · diámetro ≥3 × NMAS · varilla de 10 mm (&lt;150 mm) o 16 mm (≥150 mm)</text>
+
+  <!-- VIGA -->
+  <rect x="456" y="86" width="420" height="300" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text class="t" x="476" y="114" font-size="14" font-weight="bold">Viga estándar</text>
+
+  <!-- vista isométrica sencilla -->
+  <g>
+    <path d="M 520 280 L 760 280 L 800 250 L 560 250 Z" fill="#dbeafe" stroke="#14304f" stroke-width="2.5"/>
+    <path d="M 520 280 L 520 340 L 760 340 L 760 280 Z" fill="#e2e8f0" stroke="#14304f" stroke-width="2.5"/>
+    <path d="M 760 280 L 800 250 L 800 310 L 760 340 Z" fill="#cbd5e1" stroke="#14304f" stroke-width="2.5"/>
+    <line x1="520" y1="310" x2="760" y2="310" stroke="#94a3b8" stroke-width="1.3" stroke-dasharray="5 4"/>
+    <text class="lbl" x="590" y="300" font-size="10">2 capas (ancho 100–200 mm)</text>
+    <text class="lbl" x="590" y="326" font-size="10">1 golpe / 14 cm²</text>
+  </g>
+
+  <!-- cotas -->
+  <line x1="520" y1="366" x2="760" y2="366" stroke="#0f766e" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text class="dim" x="596" y="382">L ≥ 3 × peralte + 50 mm</text>
+  <line x1="820" y1="250" x2="820" y2="340" stroke="#0f766e" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text class="dim" x="782" y="230">150 mm</text>
+  <text class="t" x="560" y="424" font-size="12" font-weight="bold">150 × 150 mm (estándar) · ancho/peralte ≤1.5</text>
+
+  <text class="s" x="476" y="452" font-size="11">NMAS ≤25 mm: sección mínima 100 × 100 mm · NMAS 25–50 mm: 150 × 150 mm</text>
+
+  <!-- LINEA DE TIEMPO -->
+  <rect x="24" y="474" width="852" height="146" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text class="t" x="44" y="500" font-size="14" font-weight="bold">Secuencia de curado y transporte</text>
+
+  <line x1="70" y1="552" x2="830" y2="552" stroke="#cbd5e1" stroke-width="4"/>
+
+  <!-- nodos -->
+  <g>
+    <circle cx="96" cy="552" r="15" fill="#0f766e"/>
+    <text class="w" x="90" y="557" font-size="12">1</text>
+    <text class="lbl" x="60" y="586">Moldeo</text>
+    <text class="s" x="54" y="601" font-size="10">t = 0</text>
+  </g>
+  <g>
+    <circle cx="268" cy="552" r="15" fill="#0f766e"/>
+    <text class="w" x="262" y="557" font-size="12">2</text>
+    <text class="lbl" x="214" y="586">Curado inicial</text>
+    <text class="s" x="210" y="601" font-size="10">16–27 °C · ≤48 h</text>
+  </g>
+  <g>
+    <circle cx="440" cy="552" r="15" fill="#0f766e"/>
+    <text class="w" x="434" y="557" font-size="12">3</text>
+    <text class="lbl" x="404" y="586">Desmolde</text>
+    <text class="s" x="388" y="601" font-size="10">≤30 min al agua de cal</text>
+  </g>
+  <g>
+    <circle cx="612" cy="552" r="15" fill="#0f766e"/>
+    <text class="w" x="606" y="557" font-size="12">4</text>
+    <text class="lbl" x="574" y="586">Curado final</text>
+    <text class="s" x="566" y="601" font-size="10">23 ± 2 °C · agua de cal</text>
+  </g>
+  <g>
+    <circle cx="784" cy="552" r="15" fill="#0f766e"/>
+    <text class="w" x="778" y="557" font-size="12">5</text>
+    <text class="lbl" x="748" y="586">Transporte</text>
+    <text class="s" x="742" y="601" font-size="10">≥8 h · viaje ≤4 h</text>
+  </g>
+
+  <text class="s" x="44" y="632" font-size="10.5">Si el concreto especificado es ≥40 MPa, el curado inicial debe mantenerse entre 20 y 26 °C. Las vigas requieren ≥20 h en agua de cal antes del ensayo.</text>
+</svg>

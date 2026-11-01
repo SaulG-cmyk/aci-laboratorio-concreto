@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}{{ banco.titulo }} · {{ catalogo.titulo }}{% endblock %}
+{% block content %}
+<header class="recurso-head">
+  <p class="kicker">Recursos de estudio</p>
+  <h1>{{ banco.titulo }}</h1>
+  <p class="lead">{{ banco.descripcion }}</p>
+  <p class="quiz-meta">
+    <span class="badge">{{ banco.preguntas | length }} preguntas</span>
+    <span class="badge">Aprueba con {{ banco.aprobado }} %</span>
+    <span class="badge">Retroalimentación inmediata</span>
+  </p>
+  <p id="quiz-mejor" class="muted" hidden></p>
+</header>
+
+<div class="exam-controls card pad no-print">
+  <label class="exam-toggle">
+    <input type="checkbox" id="modo-examen">
+    <span>Modo examen (30 min, orden aleatorio)</span>
+  </label>
+  <button type="button" class="btn-mini" id="iniciar-examen">Iniciar</button>
+  <span id="tiempo-examen" class="tiempo-examen" hidden>30:00</span>
+  <button type="button" class="btn-mini" id="descargar-resultado" hidden>Descargar resultado (CSV)</button>
+</div>
+
+<form id="quiz" class="quiz" data-aprobado="{{ banco.aprobado }}" novalidate>
+  {% for p in banco.preguntas %}
+    {% set pregunta_idx = loop.index0 %}
+    <fieldset class="card pad pregunta" data-correcta="{{ p.correcta }}" data-tema="{{ p.tema }}">
+      <legend>
+        <span class="pregunta-num">{{ loop.index }}</span>
+        <span class="pregunta-tema">{{ p.tema }}</span>
+        {{ p.pregunta }}
+      </legend>
+      <div class="opciones">
+        {% for o in p.opciones %}
+          <label>
+            <input type="radio" name="q{{ pregunta_idx }}" value="{{ loop.index0 }}">
+            <span>{{ o }}</span>
+          </label>
+        {% endfor %}
+      </div>
+      <div class="explicacion" hidden>
+        <p><strong>Respuesta correcta:</strong> <span class="respuesta-correcta">{{ p.opciones[p.correcta] }}</span></p>
+        <p>{{ p.explicacion }}</p>
+      </div>
+    </fieldset>
+  {% endfor %}
+
+  <div class="quiz-acciones">
+    <button type="submit" class="btn">Calificar respuestas</button>
+    <button type="button" class="btn ghost" id="limpiar-quiz">Limpiar respuestas</button>
+  </div>
+</form>
+
+<section id="quiz-resultado" class="card pad quiz-resultado" hidden aria-live="polite"></section>
+
+<div class="aviso quiz-aviso">
+  <strong>Importante:</strong> esta autoevaluación es una herramienta de repaso. No reproduce el banco oficial del examen ACI ni sustituye la práctica supervisada con equipo real.
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/autoevaluacion.js') }}"></script>
+{% endblock %}

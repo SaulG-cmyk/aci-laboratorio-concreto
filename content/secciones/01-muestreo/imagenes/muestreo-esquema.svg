@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" role="img" aria-labelledby="titulo">
+  <title id="titulo">Esquema de muestreo de concreto fresco según ASTM C172</title>
+  <defs>
+    <marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f766e"/>
+    </marker>
+    <style>
+      .t { font-family: Arial, Helvetica, sans-serif; fill: #14304f; }
+      .s { font-family: Arial, Helvetica, sans-serif; fill: #64748b; }
+      .w { font-family: Arial, Helvetica, sans-serif; fill: #ffffff; }
+      .n { font-family: Arial, Helvetica, sans-serif; fill: #0f766e; font-weight: bold; }
+    </style>
+  </defs>
+
+  <rect width="800" height="480" fill="#ffffff"/>
+  <text class="t" x="32" y="38" font-size="21" font-weight="bold">Muestreo de concreto fresco — ASTM C172</text>
+  <text class="s" x="32" y="62" font-size="13">Muestra compuesta: 2 o más porciones entre el 10 % y el 90 % de la descarga</text>
+
+  <!-- Panel izquierdo: camión y toma de muestra -->
+  <rect x="24" y="82" width="430" height="268" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text class="t" x="44" y="110" font-size="14" font-weight="bold">Punto de muestreo</text>
+
+  <!-- drum -->
+  <polygon points="76,150 196,130 238,222 112,242" fill="#dbeafe" stroke="#14304f" stroke-width="2.5"/>
+  <line x1="96" y1="158" x2="140" y2="232" stroke="#93c5fd" stroke-width="3"/>
+  <line x1="128" y1="152" x2="172" y2="226" stroke="#93c5fd" stroke-width="3"/>
+  <line x1="160" y1="146" x2="204" y2="220" stroke="#93c5fd" stroke-width="3"/>
+  <!-- cab -->
+  <rect x="238" y="172" width="58" height="54" rx="6" fill="#e2e8f0" stroke="#14304f" stroke-width="2.5"/>
+  <rect x="247" y="180" width="26" height="20" rx="3" fill="#bfdbfe" stroke="#14304f" stroke-width="1.5"/>
+  <!-- chassis -->
+  <rect x="66" y="238" width="232" height="15" rx="4" fill="#475569"/>
+  <!-- wheels -->
+  <circle cx="108" cy="262" r="19" fill="#334155"/>
+  <circle cx="108" cy="262" r="8" fill="#e2e8f0"/>
+  <circle cx="252" cy="262" r="19" fill="#334155"/>
+  <circle cx="252" cy="262" r="8" fill="#e2e8f0"/>
+  <!-- chute -->
+  <path d="M 296 206 L 372 236 L 366 250 L 290 220 Z" fill="#94a3b8" stroke="#334155" stroke-width="2"/>
+  <!-- sample container -->
+  <path d="M 366 244 L 420 244 L 412 292 L 374 292 Z" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+  <text class="n" x="376" y="310" font-size="12">recipiente</text>
+
+  <!-- descarga arrow -->
+  <path d="M 340 170 C 360 178 372 190 376 206" fill="none" stroke="#0f766e" stroke-width="2.5" marker-end="url(#flecha)"/>
+  <text class="s" x="330" y="158" font-size="11">descarga</text>
+
+  <!-- Panel derecho: zona válida -->
+  <rect x="470" y="82" width="306" height="268" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text class="t" x="490" y="110" font-size="14" font-weight="bold">Zona válida de la amasada</text>
+
+  <rect x="530" y="132" width="30" height="190" rx="4" fill="#e2e8f0" stroke="#94a3b8"/>
+  <rect x="530" y="151" width="30" height="152" fill="#99f6e4"/>
+  <line x1="530" y1="132" x2="566" y2="132" stroke="#334155" stroke-width="1.5"/>
+  <line x1="530" y1="151" x2="566" y2="151" stroke="#0f766e" stroke-width="2"/>
+  <line x1="530" y1="303" x2="566" y2="303" stroke="#0f766e" stroke-width="2"/>
+  <line x1="530" y1="322" x2="566" y2="322" stroke="#334155" stroke-width="1.5"/>
+
+  <text class="s" x="574" y="136" font-size="12">100 %</text>
+  <text class="n" x="574" y="155" font-size="12">90 %</text>
+  <text class="n" x="574" y="307" font-size="12">10 %</text>
+  <text class="s" x="574" y="326" font-size="12">0 %</text>
+
+  <text class="t" x="500" y="225" font-size="13" font-weight="bold">Muestrear aquí</text>
+  <text class="s" x="500" y="245" font-size="12">Porciones separadas,</text>
+  <text class="s" x="500" y="261" font-size="12">nunca el inicio ni el final</text>
+
+  <!-- línea de tiempo -->
+  <text class="t" x="32" y="392" font-size="14" font-weight="bold">Límites de tiempo</text>
+
+  <rect x="32" y="406" width="222" height="52" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+  <text class="t" x="46" y="428" font-size="13" font-weight="bold">Composición ≤ 15 min</text>
+  <text class="s" x="46" y="447" font-size="10.5">primera a última porción</text>
+
+  <rect x="278" y="406" width="222" height="52" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text class="t" x="292" y="428" font-size="13" font-weight="bold">Inicio ≤ 5 min</text>
+  <text class="s" x="292" y="447" font-size="10.5">slump, temperatura y aire</text>
+
+  <rect x="524" y="406" width="244" height="52" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text class="t" x="538" y="428" font-size="13" font-weight="bold">Moldeo ≤ 15 min</text>
+  <text class="s" x="538" y="447" font-size="10.5">cilindros y vigas</text>
+
+  <path d="M 254 432 L 274 432" stroke="#0f766e" stroke-width="2.5" marker-end="url(#flecha)"/>
+  <path d="M 500 432 L 520 432" stroke="#0f766e" stroke-width="2.5" marker-end="url(#flecha)"/>
+</svg>

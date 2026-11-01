@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="titulo">
+  <title id="titulo">Resumen visual de conversiones de unidades y fórmulas esenciales del laboratorio de concreto</title>
+  <defs>
+    <style>
+      .t { font-family: Arial, Helvetica, sans-serif; fill: #14304f; }
+      .s { font-family: Arial, Helvetica, sans-serif; fill: #475569; }
+      .n { font-family: Arial, Helvetica, sans-serif; fill: #0f766e; font-weight: bold; }
+      .w { font-family: Arial, Helvetica, sans-serif; fill: #ffffff; font-weight: bold; }
+      .lbl { font-family: Arial, Helvetica, sans-serif; fill: #1e293b; font-size: 12px; }
+      .f { font-family: Arial, Helvetica, sans-serif; fill: #14304f; font-size: 13px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <rect width="900" height="560" fill="#ffffff"/>
+  <text class="t" x="30" y="38" font-size="22" font-weight="bold">Conversiones y fórmulas esenciales</text>
+  <text class="s" x="30" y="62" font-size="13">Referencia rápida para cálculo de densidad, rendimiento y contenido de aire</text>
+
+  <!-- CONVERSIONES -->
+  <rect x="24" y="86" width="410" height="430" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text class="t" x="44" y="116" font-size="15" font-weight="bold">Conversiones de unidades</text>
+
+  <g font-size="12">
+    <text class="lbl" x="46" y="152">1 yd³</text>
+    <text class="n" x="146" y="152">=</text>
+    <text class="lbl" x="166" y="152">27 ft³ = 0.7645549 m³</text>
+
+    <text class="lbl" x="46" y="186">1 ft³</text>
+    <text class="n" x="146" y="186">=</text>
+    <text class="lbl" x="166" y="186">28.31685 L = 0.02831685 m³</text>
+
+    <text class="lbl" x="46" y="220">1 galón</text>
+    <text class="n" x="146" y="220">=</text>
+    <text class="lbl" x="166" y="220">3.785412 L</text>
+
+    <text class="lbl" x="46" y="254">1 lb</text>
+    <text class="n" x="146" y="254">=</text>
+    <text class="lbl" x="166" y="254">0.4535924 kg</text>
+
+    <text class="lbl" x="46" y="288">1 lb/ft³</text>
+    <text class="n" x="146" y="288">=</text>
+    <text class="lbl" x="166" y="288">16.018846 kg/m³</text>
+
+    <text class="lbl" x="46" y="322">1 in</text>
+    <text class="n" x="146" y="322">=</text>
+    <text class="lbl" x="166" y="322">25.4 mm</text>
+
+    <text class="lbl" x="46" y="356">°F a °C</text>
+    <text class="n" x="146" y="356">=</text>
+    <text class="lbl" x="166" y="356">(°F − 32) / 1.8</text>
+
+    <text class="lbl" x="46" y="390">1 psi</text>
+    <text class="n" x="146" y="390">=</text>
+    <text class="lbl" x="166" y="390">6.894757 kPa</text>
+  </g>
+
+  <line x1="44" y1="414" x2="414" y2="414" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text class="s" x="46" y="438" font-size="11">Regla práctica: +25 mm de revenimiento ≈ +6 kg agua/m³</text>
+  <text class="s" x="46" y="456" font-size="11">(10 lb/yd³). No sustituye el ajuste de la mezcla.</text>
+  <text class="s" x="46" y="486" font-size="10.5">Cada sistema de unidades se usa de forma independiente;</text>
+  <text class="s" x="46" y="502" font-size="10.5">no se combinan valores SI con valores pulgada-libra.</text>
+
+  <!-- FORMULAS -->
+  <rect x="456" y="86" width="420" height="430" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text class="t" x="476" y="116" font-size="15" font-weight="bold">Fórmulas esenciales</text>
+
+  <!-- densidad -->
+  <rect x="476" y="136" width="380" height="80" rx="10" fill="#ecfdf5" stroke="#0f766e" stroke-width="1.5"/>
+  <text class="n" x="492" y="160" font-size="12">Densidad — C138</text>
+  <text class="f" x="492" y="184">D = (Mc − Mm) / Vm</text>
+  <text class="s" x="492" y="204" font-size="10.5">Mc: molde lleno · Mm: molde vacío · Vm: volumen del molde</text>
+
+  <!-- rendimiento -->
+  <rect x="476" y="228" width="380" height="80" rx="10" fill="#f0f9ff" stroke="#0284c7" stroke-width="1.5"/>
+  <text class="n" x="492" y="252" font-size="12">Rendimiento — C138</text>
+  <text class="f" x="492" y="276">Y = M / D    ·    Ry = Y / Yd</text>
+  <text class="s" x="492" y="296" font-size="10.5">M: masa total · D: densidad · Yd: volumen diseñado</text>
+
+  <!-- aire presion -->
+  <rect x="476" y="320" width="380" height="80" rx="10" fill="#fefce8" stroke="#b45309" stroke-width="1.5"/>
+  <text class="n" x="492" y="344" font-size="12">Aire por presión — C231</text>
+  <text class="f" x="492" y="368">As = A1 − G</text>
+  <text class="s" x="492" y="388" font-size="10.5">A1: lectura aparente · G: corrección por agregado</text>
+
+  <!-- aire volumetrico -->
+  <rect x="476" y="412" width="380" height="80" rx="10" fill="#fdf2f8" stroke="#be185d" stroke-width="1.5"/>
+  <text class="n" x="492" y="436" font-size="12">Aire volumétrico — C173</text>
+  <text class="f" x="492" y="460">A = AR − C + W</text>
+  <text class="s" x="492" y="480" font-size="10.5">AR: lectura final · C: corrección por alcohol · W: copas de agua</text>
+
+  <text class="s" x="30" y="546" font-size="10.5">Redondeos: densidad y rendimiento según C138 · aire por presión al 0.1 % · aire volumétrico al 0.25 %.</text>
+</svg>

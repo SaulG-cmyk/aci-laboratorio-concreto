@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" width="800" height="470" role="img" aria-labelledby="titulo">
+  <title id="titulo">Cono de Abrams: dimensiones, capas y retiro según ASTM C143</title>
+  <defs>
+    <marker id="f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f766e"/>
+    </marker>
+    <style>
+      .t { font-family: Arial, Helvetica, sans-serif; fill: #14304f; }
+      .s { font-family: Arial, Helvetica, sans-serif; fill: #64748b; }
+      .n { font-family: Arial, Helvetica, sans-serif; fill: #0f766e; font-weight: bold; }
+      .b { font-family: Arial, Helvetica, sans-serif; fill: #ffffff; font-weight: bold; }
+    </style>
+  </defs>
+
+  <rect width="800" height="470" fill="#ffffff"/>
+  <text class="t" x="32" y="38" font-size="21" font-weight="bold">Cono de Abrams — ASTM C143</text>
+  <text class="s" x="32" y="62" font-size="13">3 capas, 25 golpes por capa y retiro vertical de 300 mm en 5 ± 2 s</text>
+
+  <!-- Cono -->
+  <path d="M 170 140 L 270 140 L 320 380 L 120 380 Z" fill="#e2e8f0" stroke="#14304f" stroke-width="3"/>
+  <path d="M 170 140 L 270 140 L 262 156 L 178 156 Z" fill="#cbd5e1" stroke="#14304f" stroke-width="1.5"/>
+
+  <!-- asas -->
+  <path d="M 158 176 C 136 176 136 204 158 204" fill="none" stroke="#14304f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 282 176 C 304 176 304 204 282 204" fill="none" stroke="#14304f" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- capas -->
+  <line x1="140" y1="324" x2="300" y2="324" stroke="#0f766e" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="151" y1="252" x2="289" y2="252" stroke="#0f766e" stroke-width="2" stroke-dasharray="6 4"/>
+  <text class="n" x="212" y="318" font-size="12">1.ª capa · 70 mm</text>
+  <text class="n" x="212" y="246" font-size="12">2.ª capa · 160 mm</text>
+  <text class="n" x="212" y="192" font-size="12">3.ª capa · borde</text>
+
+  <!-- cotas -->
+  <line x1="350" y1="140" x2="350" y2="380" stroke="#0f766e" stroke-width="2.5" marker-start="url(#f)" marker-end="url(#f)"/>
+  <text class="n" x="360" y="266" font-size="13">300 mm</text>
+
+  <line x1="170" y1="116" x2="270" y2="116" stroke="#0f766e" stroke-width="2.5" marker-start="url(#f)" marker-end="url(#f)"/>
+  <text class="n" x="192" y="108" font-size="12">100 mm</text>
+
+  <line x1="120" y1="406" x2="320" y2="406" stroke="#0f766e" stroke-width="2.5" marker-start="url(#f)" marker-end="url(#f)"/>
+  <text class="n" x="190" y="428" font-size="13">200 mm</text>
+
+  <text class="s" x="112" y="448" font-size="11">Tolerancia ± 3 mm en cada dimensión</text>
+
+  <!-- Panel derecho: secuencia -->
+  <rect x="430" y="86" width="342" height="344" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text class="t" x="450" y="112" font-size="14" font-weight="bold">Secuencia del ensayo</text>
+
+  <circle cx="462" cy="142" r="14" fill="#14304f"/>
+  <text class="b" x="457" y="147" font-size="13">1</text>
+  <text class="t" x="486" y="141" font-size="12" font-weight="bold">Humedecer y sujetar</text>
+  <text class="s" x="486" y="157" font-size="11">superficie rígida y nivelada</text>
+
+  <circle cx="462" cy="196" r="14" fill="#14304f"/>
+  <text class="b" x="457" y="201" font-size="13">2</text>
+  <text class="t" x="486" y="195" font-size="12" font-weight="bold">Llenar en 3 capas</text>
+  <text class="s" x="486" y="211" font-size="11">25 golpes por capa</text>
+
+  <circle cx="462" cy="250" r="14" fill="#14304f"/>
+  <text class="b" x="457" y="255" font-size="13">3</text>
+  <text class="t" x="486" y="249" font-size="12" font-weight="bold">Enrasar y limpiar</text>
+  <text class="s" x="486" y="265" font-size="11">retirar concreto perimetral</text>
+
+  <circle cx="462" cy="304" r="14" fill="#0f766e"/>
+  <text class="b" x="457" y="309" font-size="13">4</text>
+  <text class="t" x="486" y="303" font-size="12" font-weight="bold">Levantar el cono</text>
+  <text class="s" x="486" y="319" font-size="11">300 mm en 5 ± 2 s, vertical</text>
+
+  <circle cx="462" cy="358" r="14" fill="#0f766e"/>
+  <text class="b" x="457" y="363" font-size="13">5</text>
+  <text class="t" x="486" y="357" font-size="12" font-weight="bold">Medir y registrar</text>
+  <text class="s" x="486" y="373" font-size="11">al 5 mm más cercano</text>
+
+  <rect x="450" y="394" width="302" height="24" rx="6" fill="#fef3c7" stroke="#d97706"/>
+  <text class="t" x="462" y="411" font-size="11.5" font-weight="bold">Duración total del ensayo: ≤ 2.5 min</text>
+
+  <!-- flecha de retiro -->
+  <path d="M 376 190 L 376 124" stroke="#d97706" stroke-width="3" marker-end="url(#f)"/>
+  <text class="s" x="384" y="150" font-size="11">retiro</text>
+</svg>

@@ -1,0 +1,106 @@
+{
+  "titulo": "Manual técnico para pruebas al concreto en obra",
+  "subtitulo": "ACI Grado 1 CP-1S(15)",
+  "paginas": [
+    {
+      "id": "introduccion",
+      "titulo": "Introducción",
+      "resumen": "Qué hace un técnico ACI Grado I, cómo se organiza el programa y cómo estudiar el manual.",
+      "archivo": "introduccion.md",
+      "menu": "inicio"
+    },
+    {
+      "id": "objetivos",
+      "titulo": "Objetivos",
+      "resumen": "Competencias, alcance y resultados de aprendizaje del programa de certificación.",
+      "archivo": "objetivos.md",
+      "menu": "inicio"
+    },
+    {
+      "id": "autoevaluacion",
+      "titulo": "Autoevaluación",
+      "resumen": "21 preguntas con retroalimentación para comprobar tu preparación antes del examen.",
+      "menu": "recursos",
+      "plantilla": "autoevaluacion.html",
+      "banco": "recursos/autoevaluacion.json"
+    },
+    {
+      "id": "calculadoras",
+      "titulo": "Calculadoras",
+      "resumen": "Densidad, rendimiento, aire, resistencia, temperatura y conversiones de unidades.",
+      "menu": "recursos",
+      "plantilla": "calculadoras.html"
+    },
+    {
+      "id": "formatos",
+      "titulo": "Formatos imprimibles",
+      "resumen": "Fichas de campo listas para imprimir de las siete prácticas del programa.",
+      "archivo": "recursos/formatos.md",
+      "menu": "recursos"
+    },
+    {
+      "id": "glosario",
+      "titulo": "Glosario",
+      "resumen": "Términos técnicos del concreto fresco, la metrología y los ensayos de campo.",
+      "archivo": "recursos/glosario.md",
+      "menu": "recursos"
+    },
+    {
+      "id": "seguridad",
+      "titulo": "Seguridad",
+      "resumen": "Riesgos, equipo de protección, primeros auxilios y manejo seguro de reactivos.",
+      "archivo": "recursos/seguridad.md",
+      "menu": "recursos"
+    },
+    {
+      "id": "equipo",
+      "titulo": "Equipo y calibración",
+      "resumen": "Verificación, frecuencia de calibración y cuidados del equipo de las siete prácticas.",
+      "archivo": "recursos/equipo-calibracion.md",
+      "menu": "recursos"
+    },
+    {
+      "id": "apendice",
+      "titulo": "Apéndice",
+      "resumen": "Conversiones, fórmulas esenciales, referencias cruzadas y bibliografía.",
+      "archivo": "apendice.md",
+      "menu": "cierre"
+    }
+  ],
+  "grupos": [
+    {
+      "id": "jta",
+      "titulo": "Análisis de tarea del trabajo",
+      "titulo_corto": "Análisis de tarea",
+      "descripcion": "Secciones 1 a 4: muestreo y ensayos básicos del concreto fresco.",
+      "secciones": ["01-muestreo", "02-temperatura", "03-asentamiento", "04-densidad"]
+    },
+    {
+      "id": "aire",
+      "titulo": "Introducción a la medición del contenido de aire del concreto fresco",
+      "titulo_corto": "Contenido de aire",
+      "descripcion": "Secciones 5 a 7: aire por presión, aire volumétrico, y especímenes en campo.",
+      "secciones": ["05-aire-presion", "06-aire-volumetrico", "07-cilindros-vigas"]
+    }
+  ],
+  "vistas_seccion": [
+    {
+      "id": "normativa",
+      "titulo": "Normativa",
+      "archivo": "normativa.md",
+      "icono": "scale"
+    },
+    {
+      "id": "procedimientos",
+      "titulo": "Procedimientos",
+      "archivo": "procedimientos.md",
+      "icono": "list"
+    },
+    {
+      "id": "ensayos",
+      "titulo": "Ensayos",
+      "archivo": "ensayos.md",
+      "icono": "flask"
+    }
+  ]
+}
