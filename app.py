@@ -352,5 +352,10 @@ def no_encontrado(_error):
     return render_template("404.html"), 404
 
 
+@app.route("/healthz")
+def healthz():
+    return {"status": "ok"}, 200
+
+
 if __name__ == "__main__":
     app.run(debug=True, host="127.0.0.1", port=5001)

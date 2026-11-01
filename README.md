@@ -57,3 +57,34 @@ static/                 CSS, JavaScript y favicon
 ## Alcance
 
 Este manual resume las normas ASTM del programa ACI Grado I con redacción propia. No sustituye la edición vigente de las normas, la especificación del proyecto ni la práctica supervisada con equipo real.
+
+
+## Publicar en un dominio (plataforma gestionada)
+
+El repositorio ya incluye `Procfile`, `render.yaml`, `Dockerfile` y `runtime.txt` para despliegue en Render, Railway o Fly.io.
+
+### Render (ejemplo)
+
+1. Crea una cuenta en [render.com](https://render.com) y conecta tu cuenta de GitHub.
+2. Elige **New → Web Service** y selecciona `SaulG-cmyk/aci-laboratorio-concreto`.
+3. Render detectará el `render.yaml`. Si no, configura:
+   - **Build command:** `pip install -r requirements.txt`
+   - **Start command:** `gunicorn app:app --bind 0.0.0.0:$PORT --workers 2 --timeout 120`
+4. Elige el plan (el gratuito sirve para pruebas) y crea el servicio.
+5. Render asignará una URL `https://...onrender.com`.
+
+### Dominio propio
+
+1. Compra el dominio en tu registrador (Namecheap, Cloudflare, GoDaddy, etc.).
+2. En Render, ve a **Settings → Custom Domains** y agrega tu dominio (`tudominio.com` y `www.tudominio.com`).
+3. Render te mostrará los registros DNS a crear:
+   - Un registro `CNAME` para `www` apuntando a la URL de Render.
+   - Un registro `A` (o `ALIAS`/`ANAME`) para el dominio raíz apuntando a la IP que indique Render.
+4. Crea esos registros en el panel DNS de tu registrador.
+5. Render provisionará el certificado HTTPS automáticamente (Let's Encrypt).
+
+### Notas
+
+- La aplicación no usa base de datos: el avance del checklist y la autoevaluación se guardan en el navegador del usuario (`localStorage`).
+- `gunicorn` está incluido en `requirements.txt` para el entorno Linux de producción; en Windows sigue usándose `python app.py`.
+- El endpoint `/healthz` puede usarse como health check de la plataforma.
