@@ -5,11 +5,26 @@
   "resumen": "Medir la temperatura de la mezcla con un dispositivo verificado, a la profundidad correcta y dentro de la ventana de tiempo normativa.",
   "norma_principal": "ASTM C1064 / NMX-C-435",
   "especificaciones": [
-    { "label": "Profundidad mínima", "valor": "Sensor sumergido al menos 75 mm (3 in) en todas las direcciones; cobertura de concreto ≥3 veces el NMAS." },
-    { "label": "Tiempo de lectura", "valor": "Dejar el dispositivo entre 2 y 5 min; leer sin retirarlo del concreto." },
-    { "label": "Exactitud", "valor": "±0.5 °C (±1 °F) en el rango de 0 a 50 °C (32 a 120 °F)." },
-    { "label": "Verificación", "valor": "Al menos una vez al año y ante cualquier duda, contra un termómetro de referencia (±0.2 °C)." },
-    { "label": "Registro", "valor": "Reportar al 0.5 °C (1 °F) más cercano, con hora e identificación." }
+    {
+      "label": "Profundidad mínima",
+      "valor": "Sensor sumergido al menos 75 mm (3 in) en todas las direcciones; cobertura de concreto ≥3 veces el NMAS."
+    },
+    {
+      "label": "Tiempo de lectura",
+      "valor": "Dejar el dispositivo entre 2 y 5 min; leer sin retirarlo del concreto."
+    },
+    {
+      "label": "Exactitud",
+      "valor": "±0.5 °C (±1 °F) en el rango de 0 a 50 °C (32 a 120 °F)."
+    },
+    {
+      "label": "Verificación",
+      "valor": "Al menos una vez al año y ante cualquier duda, contra un termómetro de referencia (±0.2 °C)."
+    },
+    {
+      "label": "Registro",
+      "valor": "Reportar al 0.5 °C (1 °F) más cercano, con hora e identificación."
+    }
   ],
   "checklist": [
     "Verificar que el termómetro esté limpio y con verificación vigente.",
@@ -19,5 +34,6 @@
     "Esperar entre 2 y 5 minutos sin retirar el dispositivo.",
     "Leer y registrar la temperatura al 0.5 °C más cercano.",
     "Anotar hora, amasada y comparación con el límite del proyecto."
-  ]
+  ],
+  "imagen": "tempeeatura del concreto fresco.jpeg"
 }

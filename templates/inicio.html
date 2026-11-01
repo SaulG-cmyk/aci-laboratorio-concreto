@@ -47,7 +47,11 @@
   <div class="grid-cards">
     {% for s in nav_secciones %}
       <a class="card prueba" href="{{ url_for('seccion', seccion_id=s.id) }}">
-        <div class="thumb t{{ s.numero }}"></div>
+        {% if s.imagen %}
+          <img class="thumb" src="{{ url_for('media_raiz', filename='imagenes/' ~ s.imagen) }}" alt="{{ s.titulo }}" loading="lazy">
+        {% else %}
+          <div class="thumb t{{ s.numero }}"></div>
+        {% endif %}
         <div class="card-body">
           <span class="badge">Sección {{ s.numero }}</span>
           <h3>{{ s.titulo }}</h3>

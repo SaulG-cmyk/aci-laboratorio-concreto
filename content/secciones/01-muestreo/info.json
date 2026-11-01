@@ -5,11 +5,26 @@
   "resumen": "Obtener una muestra compuesta verdaderamente representativa de la amasada, dentro de los límites de tiempo que exige la norma.",
   "norma_principal": "ASTM C172 / NMX-C-161",
   "especificaciones": [
-    { "label": "Muestra mínima", "valor": "28 L (1 pie³) para moldear especímenes de resistencia; el tamaño también se ajusta al NMAS." },
-    { "label": "Composición", "valor": "2 o más porciones tomadas entre el 10 % y el 90 % de la descarga, dentro de 15 min." },
-    { "label": "Inicio de ensayos", "valor": "Asentamiento, temperatura y aire dentro de 5 min; moldeo de especímenes dentro de 15 min." },
-    { "label": "Protección", "valor": "Evitar sol, viento, evaporación rápida y contaminación durante todo el proceso." },
-    { "label": "Equipo básico", "valor": "Recipiente no absorbente, pala o cucharón, guantes, cronómetro y cobertura." }
+    {
+      "label": "Muestra mínima",
+      "valor": "28 L (1 pie³) para moldear especímenes de resistencia; el tamaño también se ajusta al NMAS."
+    },
+    {
+      "label": "Composición",
+      "valor": "2 o más porciones tomadas entre el 10 % y el 90 % de la descarga, dentro de 15 min."
+    },
+    {
+      "label": "Inicio de ensayos",
+      "valor": "Asentamiento, temperatura y aire dentro de 5 min; moldeo de especímenes dentro de 15 min."
+    },
+    {
+      "label": "Protección",
+      "valor": "Evitar sol, viento, evaporación rápida y contaminación durante todo el proceso."
+    },
+    {
+      "label": "Equipo básico",
+      "valor": "Recipiente no absorbente, pala o cucharón, guantes, cronómetro y cobertura."
+    }
   ],
   "checklist": [
     "Identificar la amasada, el camión, la hora y el punto de muestreo.",
@@ -20,5 +35,6 @@
     "Registrar la hora de la primera y de la última porción (máximo 15 min).",
     "Proteger la muestra del sol, viento, lluvia y contaminación.",
     "Iniciar slump, temperatura y aire dentro de 5 min; moldear especímenes dentro de 15 min."
-  ]
+  ],
+  "imagen": "muestreo del concreto fresco.jpeg"
 }

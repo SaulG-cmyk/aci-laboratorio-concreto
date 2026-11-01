@@ -194,7 +194,7 @@ main { padding: 22px 28px 48px; }
   font-size: .75rem;
   font-weight: 600;
 }
-.thumb { height: 110px; }
+.thumb { height: 110px; width: 100%; display: block; object-fit: cover; }
 .t1 { background: linear-gradient(135deg, #94a3b8, #334155); }
 .t2 { background: linear-gradient(135deg, #fb923c, #ea580c); }
 .t3 { background: linear-gradient(135deg, #38bdf8, #0369a1); }

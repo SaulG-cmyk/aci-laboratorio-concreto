@@ -5,13 +5,34 @@
   "resumen": "Determinar el contenido de aire del concreto fresco con un medidor volumétrico, método aplicable a cualquier tipo de agregado, incluido el ligero y el poroso.",
   "norma_principal": "ASTM C173/C173M / NMX-C-158",
   "especificaciones": [
-    { "label": "Aplicabilidad", "valor": "Cualquier concreto, denso, celular o ligero. Mide el aire de la fracción de mortero y no se afecta por el aire interno de los agregados porosos." },
-    { "label": "Recipiente", "valor": "Cuenco de al menos 2.0 L (0.075 ft³), con diámetro entre 1.0 y 1.25 veces la altura; sección superior al menos 20 % mayor que el cuenco." },
-    { "label": "Escala", "valor": "Graduada de 0 a 9 % o más, en incrementos ≤0.5 %, con exactitud de ±0.1 % del volumen del cuenco." },
-    { "label": "Compactación", "valor": "Dos capas de igual volumen, 25 golpes por capa con varilla de 16 mm y 10 a 15 golpes de mazo en las paredes." },
-    { "label": "Alcohol", "valor": "Alcohol isopropílico al 70 % en volumen; se agrega solo en el llenado inicial. Si se usa más de 1.25 L se aplica la corrección de la Tabla 1." },
-    { "label": "Tiempos", "valor": "Inversión ≤5 s cada vez y ≥45 s en total; rodado ≈1 min; estabilización ≤6 min; lectura al 0.25 % más cercano." },
-    { "label": "Registro", "valor": "Reportar el contenido de aire al 0.25 % más cercano, junto con el volumen de alcohol y las copas de agua agregadas." }
+    {
+      "label": "Aplicabilidad",
+      "valor": "Cualquier concreto, denso, celular o ligero. Mide el aire de la fracción de mortero y no se afecta por el aire interno de los agregados porosos."
+    },
+    {
+      "label": "Recipiente",
+      "valor": "Cuenco de al menos 2.0 L (0.075 ft³), con diámetro entre 1.0 y 1.25 veces la altura; sección superior al menos 20 % mayor que el cuenco."
+    },
+    {
+      "label": "Escala",
+      "valor": "Graduada de 0 a 9 % o más, en incrementos ≤0.5 %, con exactitud de ±0.1 % del volumen del cuenco."
+    },
+    {
+      "label": "Compactación",
+      "valor": "Dos capas de igual volumen, 25 golpes por capa con varilla de 16 mm y 10 a 15 golpes de mazo en las paredes."
+    },
+    {
+      "label": "Alcohol",
+      "valor": "Alcohol isopropílico al 70 % en volumen; se agrega solo en el llenado inicial. Si se usa más de 1.25 L se aplica la corrección de la Tabla 1."
+    },
+    {
+      "label": "Tiempos",
+      "valor": "Inversión ≤5 s cada vez y ≥45 s en total; rodado ≈1 min; estabilización ≤6 min; lectura al 0.25 % más cercano."
+    },
+    {
+      "label": "Registro",
+      "valor": "Reportar el contenido de aire al 0.25 % más cercano, junto con el volumen de alcohol y las copas de agua agregadas."
+    }
   ],
   "checklist": [
     "Verificar la calibración anual del medidor y de la copa calibrada.",
@@ -26,5 +47,6 @@
     "Repetir el rodado y confirmar la lectura; si difiere más de 0.25 %, repetir hasta estabilizar o rechazar.",
     "Desarmar, vaciar y verificar que no queden porciones de concreto sin alterar.",
     "Calcular A = AR − C + W y reportar al 0.25 % más cercano."
-  ]
+  ],
+  "imagen": "Contenido de aire - Método volumétrico (Roll-A-Meter).jpg"
 }

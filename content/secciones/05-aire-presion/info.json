@@ -5,11 +5,26 @@
   "resumen": "Determinar el contenido de aire del concreto fresco con un medidor de presión Tipo A o Tipo B, aplicando el factor de corrección por agregado.",
   "norma_principal": "ASTM C231 / NMX-C-157",
   "especificaciones": [
-    { "label": "Aplicabilidad", "valor": "Concretos con agregados relativamente densos; no usar con agregado ligero, escoria enfriada al aire ni agregados muy porosos (usar C173)." },
-    { "label": "Recipiente", "valor": "Cuenco cilíndrico de al menos 6 L (0.20 ft³), con diámetro entre 0.75 y 1.25 veces la altura." },
-    { "label": "Calibración", "valor": "Cada 3 meses como máximo; recalibrar el Tipo A si se cambia de elevación más de 180 m." },
-    { "label": "Corrección por agregado", "valor": "Determinar el factor G con los agregados de la mezcla; contenido real As = A1 − G." },
-    { "label": "Registro", "valor": "Reportar al 0.1 % más cercano; si la lectura excede 8 %, a la media división más cercana." }
+    {
+      "label": "Aplicabilidad",
+      "valor": "Concretos con agregados relativamente densos; no usar con agregado ligero, escoria enfriada al aire ni agregados muy porosos (usar C173)."
+    },
+    {
+      "label": "Recipiente",
+      "valor": "Cuenco cilíndrico de al menos 6 L (0.20 ft³), con diámetro entre 0.75 y 1.25 veces la altura."
+    },
+    {
+      "label": "Calibración",
+      "valor": "Cada 3 meses como máximo; recalibrar el Tipo A si se cambia de elevación más de 180 m."
+    },
+    {
+      "label": "Corrección por agregado",
+      "valor": "Determinar el factor G con los agregados de la mezcla; contenido real As = A1 − G."
+    },
+    {
+      "label": "Registro",
+      "valor": "Reportar al 0.1 % más cercano; si la lectura excede 8 %, a la media división más cercana."
+    }
   ],
   "checklist": [
     "Verificar la calibración vigente del medidor (≤3 meses).",
@@ -20,5 +35,6 @@
     "Ensamblar la tapa y sellar sin atrapar aire.",
     "Aplicar la presión, golpear el cuenco y leer el contenido aparente A1.",
     "Calcular As = A1 − G y registrar al 0.1 %."
-  ]
+  ],
+  "imagen": "Contenido de aire - Método de presión.jpeg"
 }

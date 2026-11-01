@@ -5,11 +5,26 @@
   "resumen": "Determinar la consistencia de la mezcla con el cono de Abrams, controlando capas, golpes, tiempos y tolerancias.",
   "norma_principal": "ASTM C143 / NMX-C-156",
   "especificaciones": [
-    { "label": "Cono de Abrams", "valor": "Base 200 mm, parte superior 100 mm, altura 300 mm; tolerancia ±3 mm en cada dimensión." },
-    { "label": "Capas y golpes", "valor": "3 capas de igual volumen; 25 golpes por capa con varilla de 16 mm; penetrar 25 mm en la capa anterior." },
-    { "label": "Tiempo del ensayo", "valor": "2.5 min desde el inicio del llenado hasta retirar el molde; levantar 300 mm en 5 ± 2 s." },
-    { "label": "Aplicabilidad", "valor": "Concreto plástico con agregado grueso ≤37.5 mm (1½ in); si es mayor, tamizar en húmedo." },
-    { "label": "Registro", "valor": "Reportar el asentamiento al 5 mm (¼ in) más cercano y describir el tipo de falla." }
+    {
+      "label": "Cono de Abrams",
+      "valor": "Base 200 mm, parte superior 100 mm, altura 300 mm; tolerancia ±3 mm en cada dimensión."
+    },
+    {
+      "label": "Capas y golpes",
+      "valor": "3 capas de igual volumen; 25 golpes por capa con varilla de 16 mm; penetrar 25 mm en la capa anterior."
+    },
+    {
+      "label": "Tiempo del ensayo",
+      "valor": "2.5 min desde el inicio del llenado hasta retirar el molde; levantar 300 mm en 5 ± 2 s."
+    },
+    {
+      "label": "Aplicabilidad",
+      "valor": "Concreto plástico con agregado grueso ≤37.5 mm (1½ in); si es mayor, tamizar en húmedo."
+    },
+    {
+      "label": "Registro",
+      "valor": "Reportar el asentamiento al 5 mm (¼ in) más cercano y describir el tipo de falla."
+    }
   ],
   "checklist": [
     "Humedecer el cono y la placa base, sin dejar agua libre.",
@@ -20,5 +35,6 @@
     "Enrasar con movimiento de regleado y retirar el concreto perimetral.",
     "Levantar el cono verticalmente 300 mm en 5 ± 2 s, sin girar.",
     "Medir el descenso y registrar al 5 mm más cercano, indicando la falla."
-  ]
+  ],
+  "imagen": "Asentamiento de concreto.jpg"
 }
